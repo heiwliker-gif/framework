@@ -1,0 +1,17 @@
+.list {
+  margin-top: 8px;
+}
+
+.list h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.list ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}

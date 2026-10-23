@@ -1,0 +1,22 @@
+.card {
+  background: white;
+  border: 1px solid #e1e7e4;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #222;
+}
+
+.body {
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+.btn {
+  font: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.primary:hover {
+  background: var(--primary-hover);
+}
+
+.secondary {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.secondary:hover {
+  background: #f0f5f3;
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(0, 120, 90, 0.3);
+  outline-offset: 2px;
+}
