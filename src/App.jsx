@@ -3,14 +3,14 @@ import ItemList from "./components/ItemList";
 import "./App.css";
 
 function App() {
-  const [studentName, setStudentName] = useState(
-    () => window.localStorage.getItem("pz9-student-name") || "",
+  const [teamMembers, setTeamMembers] = useState(
+    () => window.localStorage.getItem("pz9-team-members") || "",
   );
 
-  function updateStudentName(event) {
-    const name = event.target.value;
-    setStudentName(name);
-    window.localStorage.setItem("pz9-student-name", name);
+  function updateTeamMembers(event) {
+    const names = event.target.value;
+    setTeamMembers(names);
+    window.localStorage.setItem("pz9-team-members", names);
   }
 
   return (
@@ -34,20 +34,19 @@ function App() {
 
       <section className="student-bar" aria-label="Студент туралы ақпарат">
         <div className="student-avatar" aria-hidden="true">
-          {studentName.trim().charAt(0).toLocaleUpperCase() || "?"}
+          {teamMembers.trim().charAt(0).toLocaleUpperCase() || "C"}
         </div>
         <div className="student-field">
-          <label htmlFor="student-name">Студенттің аты-жөні</label>
+          <label htmlFor="student-name">Команда мүшелерінің аты-жөні</label>
           <input
             id="student-name"
             type="text"
-            value={studentName}
-            onChange={updateStudentName}
-            placeholder="Аты-жөніңізді енгізіңіз"
-            autoComplete="name"
+            value={teamMembers}
+            onChange={updateTeamMembers}
+            placeholder="Екі қатысушыны үтірмен бөліп енгізіңіз"
           />
         </div>
-        <span className="student-hint">Енгізілген аты осы браузерде сақталады</span>
+        <span className="student-hint">Енгізілген аттар осы браузерде сақталады</span>
       </section>
 
       <ItemList />
