@@ -33,7 +33,9 @@ function App() {
       </header>
 
       <section className="student-bar" aria-label="Студент туралы ақпарат">
-        <div className="student-avatar" aria-hidden="true">А</div>
+        <div className="student-avatar" aria-hidden="true">
+          {studentName.trim().charAt(0).toLocaleUpperCase() || "?"}
+        </div>
         <div className="student-field">
           <label htmlFor="student-name">Студенттің аты-жөні</label>
           <input
