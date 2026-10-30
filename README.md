@@ -1,16 +1,21 @@
-# React + Vite
+# ПЖ №9 — кейс өтінімдері
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite жобасы. List экраны ПЖ №9 тапсырмасындағы C тобы үшін жергілікті mock деректерін пайдаланады.
 
-Currently, two official plugins are available:
+## Іске қосу
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev -- --host 0.0.0.0
+```
 
-## React Compiler
+## Демо
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Бет ашылғанда тізім 800 мс кідірістен кейін жүктеледі.
+- Сәтті жағдайда 8 өтінім карточкасы көрсетіледі.
+- «Қатені көрсету» батырмасы қате күйін іске қосады.
+- Қате экранындағы «Қайталау» тізімді қайта жүктейді.
+- Карточкадағы «Толық ақпарат» батырмасы ID және сипаттамасы бар Details күйін ашады.
+- Жоғарғы өріске енгізілген студенттің аты-жөні браузерде сақталады.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Деректер желіге сұраусыз, жергілікті массивтен алынады. Mock сұраудың нәтижесін және қатені кідіріспен көрсетуге мүмкіндік береді.
